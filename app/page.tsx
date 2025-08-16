@@ -1,8 +1,16 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
+  const router = useRouter()
+  
+  useEffect(() => {
+    // Auto redirect to dashboard
+    router.push('/dashboard')
+  }, [router])
+  
   const [question, setQuestion] = useState('')
   const [messages, setMessages] = useState<Array<{role: string, content: string}>>([
     {
