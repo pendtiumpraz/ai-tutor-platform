@@ -1,0 +1,8 @@
+{
+  "name": "ai-tutor-platform",
+  "version": "0.0.1",
+  "description": "AI-powered tutoring platform with adaptive learning",
+  "author": "pendtiumpraz",
+  "license": "MIT",
+  "private": true
+}
